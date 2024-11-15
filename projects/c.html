@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Musab Oguz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../img/toplogo.png" type="image/icon type">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="social-media">
+                <li><a href="https://github.com/Dolyetyus">
+                    <img src="../img/github.svg" alt="GitHub" style="height: 24px; width: 24px;"></a>
+                </li>               
+                <li><a href="https://www.linkedin.com/in/musab-oguz/">
+                    <img src="../img/linkedin.svg" alt="LinkedIn" style="height: 24px; width: 24px;"></a>
+                </li>
+                <li><a href="https://www.hackerrank.com/profile/doliatius">
+                    <img src="../img/hackerrank.png" alt="Hackerrank" style="height: 24px; width: 24px;"></a>
+                </li> 
+                <li><a href="https://leetcode.com/u/dolyetyus/">
+                    <img src="../img/leetcode.png" alt="Leetcode" style="height: 24px; width: 24px;"></a>
+                </li> 
+            </ul>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="redirects" class="redirects">
+                <li><a href="../index.html" id="homeButton">Home</a></li>
+                <li>
+                    <div id="aboutButtonWrapper">
+                        <a id="aboutButton">About</a>
+                        <ul id="aboutMeList" class="about-me-list">
+                            <li><a href="../about.html">About me</a></li>
+                            <li><a href="../skills.html">Skills</a></li>
+                            <li><a href="../certificates.html">Certificates</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="projectsButtonWrapper">
+                        <a id="projectsButton">Projects</a>
+                        <ul id="languageList" class="language-list">
+                            <li><a href="./assembly.html">Assembly x64</a></li>
+                            <li><a href="./c.html">C</a></li>
+                            <li><a href="./cpp.html">C++</a></li>
+                            <li><a href="./java.html">Java</a></li>
+                            <li><a href="./kotlin.html">Kotlin</a></li>
+                            <li><a href="./python.html">Python</a></li>
+                            <li><a href="./scala.html">Scala</a></li>
+                            <li><a href="./webdev.html">Web Dev</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro" id="C">
+            <div class="projects">
+                <div class="project fade-in">
+                    <h2>The Github Repo For My Open-source C Side Projects</h2>
+                    <p>Take a look at my Github repo to see my publicly available side projects written in C. This repo includes games, algorithms, data structures, and small projects.</p>
+                    <img src="../img/c1.png" id="repo" alt="Project Image"> </br>
+                    <a href="https://github.com/Dolyetyus/program-in-c-playground" id="reach">GitHub Link</a>
+                </div>
+                <div class="project4 fade-in">
+                    <h2>IJVM Interpreter</h2>
+                    <p>Developed an enhanced interpreter for the IJVM (Integer Java Virtual Machine) instruction set architecture, written in C. This interpreter executes IJVM bytecode, allowing for the emulation of Java-like programs at the bytecode level. I also made a detailed terminal based debugger, inspired by the GNU debugger, to debug files with .ijvm extension. Some extra operations such as tail recursion handling is also implemented, as well as basic networking functions where I made use of C networking libraries to transfer information over the network between ijvm machine instances. With this project, I mastered parsing and executing bytecode instructions.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project0 fade-in">
+                    <h2>Custom UNIX Shell</h2>
+                    <p>Developed a Unix shell in C language using system calls to implement advanced features including pipes, redirections, detached commands, basic job control, and sequences. This project helped me to master low-level programming and system-level interaction, offering users a powerful and flexible command-line interface. By including essential Unix shell functionalities, this implementation demonstrates my both technical expertise and the ability to engineer complex software systems.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project1 fade-in">
+                    <h2>Custom System Memory Allocator</h2>
+                    <p>Implemented a custom system memory allocator in C using brk and sbrk. This allocator can replace the C library malloc, realloc, calloc and free functions. The allocator makes use of memory pages and keeps track of the memory blocks with the help of a linked list, as well as having a really small overhead per block. The implementation dynamically requests or gives back memory to the kernel and optimises locality in the memory.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project2 fade-in">
+                    <h2>Custom FAT File System</h2>
+                    <p>Developed a custom FAT file system using FUSE and C, delivering essential file operations including directory listing, directory creation, file reading, file deletion, file truncation, and file creation with writing capabilities. This project integrates user-level file system operations with the underlying filesystem infrastructure, offering a reliable and efficient solution for managing files and directories, which underscores a deep understanding of file system architecture and demonstrates the ability to create sophisticated software systems.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project3 fade-in">
+                    <h2>Server-Side Key-Value Store</h2>
+                    <p>Designed and implemented a high-performance, concurrent, in-memory key-value store in C, featuring a hash table for efficient data storage and mutexes and read-write locks for handling concurrent access. I created a thread pool for connection management and the system establishes communication between client and server via TCP sockets, enabling seamless interaction with the key-value store. The server processes client requests for modifying items in the store, supporting operations such as deletion (DEL), retrieval (GET), and insertion (SET), while ensuring data integrity and thread safety through robust concurrency control mechanisms.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+            </div>
+            
+            <button class="get-in-touch" onclick="location.href='mailto:doliatius@proton.me';" style="display: none;">Get in touch</button>
+            <button class="cv-button" onclick="openCV();" style="display: none;">Check my CV</button>
+            <small id="lastUpdated" style="display: none;"></small>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 - Made by Musab Oguz</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Musab Oguz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/toplogo.png" type="image/icon type">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="social-media">
+                <li><a href="https://github.com/Dolyetyus">
+                    <img src="img/github.svg" alt="GitHub" style="height: 24px; width: 24px;"></a>
+                </li>               
+                <li><a href="https://www.linkedin.com/in/musab-oguz/">
+                    <img src="img/linkedin.svg" alt="LinkedIn" style="height: 24px; width: 24px;"></a>
+                </li>
+                <li><a href="https://www.hackerrank.com/profile/doliatius">
+                    <img src="img/hackerrank.png" alt="Hackerrank" style="height: 24px; width: 24px;"></a>
+                </li> 
+                <li><a href="https://leetcode.com/u/dolyetyus/">
+                    <img src="img/leetcode.png" alt="Leetcode" style="height: 24px; width: 24px;"></a>
+                </li> 
+            </ul>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="redirects" class="redirects">
+                <li><a href="./index.html" id="homeButton">Home</a></li>
+                <li>
+                    <div id="aboutButtonWrapper">
+                        <a id="aboutButton">About</a>
+                        <ul id="aboutMeList" class="about-me-list">
+                            <li><a href="./about.html">About me</a></li>
+                            <li><a href="./skills.html">Skills</a></li>
+                            <li><a href="./certificates.html">Certificates</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="projectsButtonWrapper">
+                        <a id="projectsButton">Projects</a>
+                        <ul id="languageList" class="language-list">
+                            <li><a href="./projects/assembly.html">Assembly x64</a></li>
+                            <li><a href="./projects/c.html">C</a></li>
+                            <li><a href="./projects/cpp.html">C++</a></li>
+                            <li><a href="./projects/java.html">Java</a></li>
+                            <li><a href="./projects/kotlin.html">Kotlin</a></li>
+                            <li><a href="./projects/python.html">Python</a></li>
+                            <li><a href="./projects/scala.html">Scala</a></li>
+                            <li><a href="./projects/webdev.html">Web Dev</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro" id="indexintro">
+            <h1 class="fade-in">Hi, I'm Musab</h1>
+            <p class="fade-in">Computer Science Student / Software Developer</p>
+            <p class="fade-in">Student at Vrije Universiteit Amsterdam, with experience in programming and computer science, and interests in computer networks, cyber security, AI, software development and more.</p>
+            <p class="fade-in">If you are looking for a skilled student developer or an AI engineer, you can contact me through my social media accounts, or you can send me an email using the button below and get my CV.</p>
+            <div class="fade-in">
+                <button class="get-in-touch fade-in" onclick="location.href='mailto:doliatius@proton.me';">Get in touch</button>
+            </div>
+            <div class="fade-in">
+                <button class="cv-button" onclick="openCV();">Check my CV</button>
+                <small id="lastUpdated" ></small>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 - Made by Musab Oguz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

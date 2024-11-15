@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Musab Oguz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../img/toplogo.png" type="image/icon type">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="social-media">
+                <li><a href="https://github.com/Dolyetyus">
+                    <img src="../img/github.svg" alt="GitHub" style="height: 24px; width: 24px;"></a>
+                </li>               
+                <li><a href="https://www.linkedin.com/in/musab-oguz/">
+                    <img src="../img/linkedin.svg" alt="LinkedIn" style="height: 24px; width: 24px;"></a>
+                </li>
+                <li><a href="https://www.hackerrank.com/profile/doliatius">
+                    <img src="../img/hackerrank.png" alt="Hackerrank" style="height: 24px; width: 24px;"></a>
+                </li> 
+                <li><a href="https://leetcode.com/u/dolyetyus/">
+                    <img src="../img/leetcode.png" alt="Leetcode" style="height: 24px; width: 24px;"></a>
+                </li> 
+            </ul>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="redirects" class="redirects">
+                <li><a href="../index.html" id="homeButton">Home</a></li>
+                <li>
+                    <div id="aboutButtonWrapper">
+                        <a id="aboutButton">About</a>
+                        <ul id="aboutMeList" class="about-me-list">
+                            <li><a href="../about.html">About me</a></li>
+                            <li><a href="../skills.html">Skills</a></li>
+                            <li><a href="../certificates.html">Certificates</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="projectsButtonWrapper">
+                        <a id="projectsButton">Projects</a>
+                        <ul id="languageList" class="language-list">
+                            <li><a href="./assembly.html">Assembly x64</a></li>
+                            <li><a href="./c.html">C</a></li>
+                            <li><a href="./cpp.html">C++</a></li>
+                            <li><a href="./java.html">Java</a></li>
+                            <li><a href="./kotlin.html">Kotlin</a></li>
+                            <li><a href="./python.html">Python</a></li>
+                            <li><a href="./scala.html">Scala</a></li>
+                            <li><a href="./webdev.html">Web Dev</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro" id="Scala">
+            <div class="projects">
+                <div class="project0  fade-in">
+                    <h2>Cyber Tetris</h2>
+                    <p>Implemented and improved further a modern version of the classic Tetris game in Scala using Object Oriented and Functional Programming, focusing on immutability, inheritance, higher functions and other OOFP concepts. Also added additional gameplay mechanics such as audio, hand-coded graphics, new block types, a GUI, bonus blocks with special powers, and many more.</p>
+                    <p>Demo video:</p>
+                    <iframe id="kmsembed-1_nozpc30u" width="608" height="402" src="https://video.vu.nl/embed/secure/iframe/entryId/1_nozpc30u/uiConfId/30491791/st/0" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Musab Oguz - CyberTetris OOFP2023"></iframe>
+                    </br></br>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project1  fade-in">
+                    <h2>REPLs</h2>
+                    <p>Wrote a common REPL (Read-Eval-Print Loop) calculator for both integers and multisets in Scala, showcasing proficiency in advanced programming techniques like pattern matching and the application of theoretical concepts to practical projects. Utilizing a deep understanding of both object-oriented and functional programming paradigms, I made two distinct calculators within the project: an integer REPL and a multiset REPL. By employing pattern matching, I ensured efficient and elegant handling of user input, enhancing the user experience and simplifying code maintenance. This project not only demonstrates technical expertise but also highlights the ability to translate theoretical knowledge into efficient solutions using functional programming in Scala.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project2  fade-in">
+                    <h2>Reversible Snake Game</h2>
+                    <p>Made a dynamic Snake game that integrates Object-Oriented Programming and immutability for in-depth game state management. Through an implementation using immutable data structures, the project ensures integrity and consistency throughout gameplay. The architecture supports interactive features like frame-by-frame reversal, facilitated by a history of past game states and activation of reverse mode when pressed 'R'. The game accurately reflects user inputs, updates the state, and renders visuals. To optimize performance and adhere to functional programming principles, mutable containers are not used in favor of immutable data structures, enhancing reliability, maintainability, and best practices for such project.</p>
+                    <p>Demo video:</p>
+                    <iframe width="600" height="350" src="https://www.youtube.com/embed/waYjedNL4aM?si=xytJjJpGAhu9bCQK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </br></br>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+            </div>
+            <button class="get-in-touch" onclick="location.href='mailto:doliatius@proton.me';" style="display: none;">Get in touch</button>
+            <button class="cv-button" onclick="openCV();" style="display: none;">Check my CV</button>
+            <small id="lastUpdated" style="display: none;"></small>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 - Made by Musab Oguz</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Musab Oguz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../img/toplogo.png" type="image/icon type">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="social-media">
+                <li><a href="https://github.com/Dolyetyus">
+                    <img src="../img/github.svg" alt="GitHub" style="height: 24px; width: 24px;"></a>
+                </li>               
+                <li><a href="https://www.linkedin.com/in/musab-oguz/">
+                    <img src="../img/linkedin.svg" alt="LinkedIn" style="height: 24px; width: 24px;"></a>
+                </li>
+                <li><a href="https://www.hackerrank.com/profile/doliatius">
+                    <img src="../img/hackerrank.png" alt="Hackerrank" style="height: 24px; width: 24px;"></a>
+                </li> 
+                <li><a href="https://leetcode.com/u/dolyetyus/">
+                    <img src="../img/leetcode.png" alt="Leetcode" style="height: 24px; width: 24px;"></a>
+                </li> 
+            </ul>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="redirects" class="redirects">
+                <li><a href="../index.html" id="homeButton">Home</a></li>
+                <li>
+                    <div id="aboutButtonWrapper">
+                        <a id="aboutButton">About</a>
+                        <ul id="aboutMeList" class="about-me-list">
+                            <li><a href="../about.html">About me</a></li>
+                            <li><a href="../skills.html">Skills</a></li>
+                            <li><a href="../certificates.html">Certificates</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="projectsButtonWrapper">
+                        <a id="projectsButton">Projects</a>
+                        <ul id="languageList" class="language-list">
+                            <li><a href="./assembly.html">Assembly x64</a></li>
+                            <li><a href="./c.html">C</a></li>
+                            <li><a href="./cpp.html">C++</a></li>
+                            <li><a href="./java.html">Java</a></li>
+                            <li><a href="./kotlin.html">Kotlin</a></li>
+                            <li><a href="./python.html">Python</a></li>
+                            <li><a href="./scala.html">Scala</a></li>
+                            <li><a href="./webdev.html">Web Dev</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro" id="Python">
+            <div class="projects">
+                <div class="project0  fade-in">
+                    <h2>Protecting Princess Lulu Game</h2>
+                    <p>Protecting Princess Lulu is a 2D pixel rogue-like action-adventure game built with Python and Pygame. The game is made using an object-oriented approach and key programming concepts to create a captivating gaming experience. The game contains pre-rendered graphics, a useful and authentic GUI, an amazing audio and music design, fun game mechanics and elements to improve the gaming experience further. With future plans for expansion, including the addition of new levels and features, Protecting Lulu stands as a good example of my technical proficiency and dedication of game development.</p>
+                    <img src="https://github.com/Dolyetyus/protecting-princess-lulu/raw/main/img/ingame4.jpg?raw=true" alt="Project Image"> </br>
+                    <a href="https://github.com/Dolyetyus/protecting-princess-lulu" id="reach">GitHub Link</a>
+                </div>
+                <div class="project1  fade-in">
+                    <h2>Fast-paced Multiplayer Shooting Game</h2>
+                    <p>Developed a high-paced, 2D multiplayer shooter game in Python with my teammate Kuba, using socket programming for real-time networked player interaction using UDP with custom implemented CRC for efficient, low-latency communication between server and clients, with game mechanics such as dead-reckoning, player health management, projectile shooting, and power-ups to enhance gameplay dynamics using PyGame library.</p>
+                    <img src="../img/py2.png" alt="Project Image"> </br>
+                    <a href="https://github.com/Dolyetyus/simple-multiplayer-shooter-game" id="reach">GitHub Link</a>
+                </div>
+                <div class="project2  fade-in">
+                    <h2>UDP Chat Server & Client For Unreliable Networks</h2>
+                    <p>Created a chat client and server program in Python specifically designed for unreliable networks, utilizing UDP connections and implementing a custom CRC for error detection with my teammate Kuba. The client ensures reliable message transmission by detecting and correcting errors with a high probability, using a custom CRC mechanism capable of detecting at least 16-bit errors. Messages containing uncorrectable errors are discarded to maintain data integrity. Additionally, the client supports various interface commands, including setting and retrieving configuration values from the server. With features such as message ordering, acknowledgment, retransmission, and prevention of duplicate messages, this project showcases my network capabilities tailored for unreliable network environments.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project3  fade-in">
+                    <h2>Chat Server & Client</h2>
+                    <p>Developed a text-based chat client and server program in Python using TCP sockets with my teammate Kuba. The client-server architecture enables multiple users to exchange messages in real-time within a user-friendly interface. The server supports up to 100 concurrent users, utilizing threading to manage simultaneous connections efficiently. It detects and handles user disconnections gracefully, ensuring smooth communication flow. This project demonstrates my proficiency in network programming, concurrent programming techniques, and server-client communication protocols.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+            </div>
+            <button class="get-in-touch" onclick="location.href='mailto:doliatius@proton.me';" style="display: none;">Get in touch</button>
+            <button class="cv-button" onclick="openCV();" style="display: none;">Check my CV</button>
+            <small id="lastUpdated" style="display: none;"></small>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 - Made by Musab Oguz</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

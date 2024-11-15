@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Musab Oguz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../img/toplogo.png" type="image/icon type">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="social-media">
+                <li><a href="https://github.com/Dolyetyus">
+                    <img src="../img/github.svg" alt="GitHub" style="height: 24px; width: 24px;"></a>
+                </li>               
+                <li><a href="https://www.linkedin.com/in/musab-oguz/">
+                    <img src="../img/linkedin.svg" alt="LinkedIn" style="height: 24px; width: 24px;"></a>
+                </li>
+                <li><a href="https://www.hackerrank.com/profile/doliatius">
+                    <img src="../img/hackerrank.png" alt="Hackerrank" style="height: 24px; width: 24px;"></a>
+                </li> 
+                <li><a href="https://leetcode.com/u/dolyetyus/">
+                    <img src="../img/leetcode.png" alt="Leetcode" style="height: 24px; width: 24px;"></a>
+                </li> 
+            </ul>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="redirects" class="redirects">
+                <li><a href="../index.html" id="homeButton">Home</a></li>
+                <li>
+                    <div id="aboutButtonWrapper">
+                        <a id="aboutButton">About</a>
+                        <ul id="aboutMeList" class="about-me-list">
+                            <li><a href="../about.html">About me</a></li>
+                            <li><a href="../skills.html">Skills</a></li>
+                            <li><a href="../certificates.html">Certificates</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="projectsButtonWrapper">
+                        <a id="projectsButton">Projects</a>
+                        <ul id="languageList" class="language-list">
+                            <li><a href="./assembly.html">Assembly x64</a></li>
+                            <li><a href="./c.html">C</a></li>
+                            <li><a href="./cpp.html">C++</a></li>
+                            <li><a href="./java.html">Java</a></li>
+                            <li><a href="./kotlin.html">Kotlin</a></li>
+                            <li><a href="./python.html">Python</a></li>
+                            <li><a href="./scala.html">Scala</a></li>
+                            <li><a href="./webdev.html">Web Dev</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro" id="Assembly">
+            <div class="projects">
+                <div class="project0 fade-in">
+                    <h2>STREAM Benchmark</h2>
+                    <p>Built the STREAM Benchmark in x64 assembly language to fine-tune memory bandwidth measurement, demonstrating expertise in low-level programming for tasks demanding peak performance.</p>
+                    <img src="../img/assembly0.png" alt="Project Image"> </br>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project1 fade-in">
+                    <h2>Tic Tac Toe Game</h2>
+                    <p>Crafted a classic terminal-based Tic Tac Toe game in Assembly x64, offering interactive gameplay against either another player or a basic AI opponent. Features include a clear terminal screen for enhanced visualization and a user-friendly interface, to improve the gaming experience.</p>
+                    <img src="../img/assembly1.png" alt="Project Image"> </br>
+                    <a href="https://github.com/Dolyetyus/tic-tac-toe-in-assembly-x64" id="reach">GitHub Link</a>
+                </div>
+                <div class="project2 fade-in">
+                    <h2>printf() Function</h2>
+                    <p>I and my teammate Ongun implemented the C library function printf entirely in assembly language, using advanced low-level programming skills. This project taught us a deep understanding of both assembly language and the inner workings of the printf function at the system level.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project3 fade-in">
+                    <h2>Custom Dynamic Stack Implementation</h2>
+                    <p>Implemented a custom dynamic stack designed for flexibility and efficiency. The stack automatically adjusts its size to accommodate added elements, ensuring optimal resource utilization. Key operations include push, pop, peek, and total, all with constant time complexity for swift execution.</p>
+                    <img src="../img/assembly2.png" alt="Project Image"> </br>
+                    <a href="https://github.com/Dolyetyus/custom-stack-in-assembly" id="reach">GitHub Link</a>
+                </div>
+                <div class="project4 fade-in">
+                    <h2>Fibonacci Sequence Calculator With Dynamic Array</h2>
+                    <p>Implemented an optimized Fibonacci sequence calculator using dynamic arrays to enhance computational efficiency. The subroutine intelligently handles both cases where the Fibonacci sequence is partially or fully calculated.</p>
+                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
+                </div>
+                <div class="project5 fade-in">
+                    <h2>Quicksort</h2>
+                    <p>Implemented the Quick Sort algorithm in Assembly x64, to understand and master data structures and algorithms. This project showcases a deep dive into low-level programming and algorithmic complexity.</p>
+                    <a href="https://github.com/Dolyetyus/custom-stack-in-assembly" id="reach">GitHub Link</a>
+                </div>
+            </div>
+            
+            <button class="get-in-touch" onclick="location.href='mailto:doliatius@proton.me';" style="display: none;">Get in touch</button>
+            <button class="cv-button" onclick="openCV();" style="display: none;">Check my CV</button>
+            <small id="lastUpdated" style="display: none;"></small>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 - Made by Musab Oguz</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

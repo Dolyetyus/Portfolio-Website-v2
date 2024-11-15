@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Musab Oguz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/toplogo.png" type="image/icon type">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="social-media">
+                <li><a href="https://github.com/Dolyetyus">
+                    <img src="img/github.svg" alt="GitHub" style="height: 24px; width: 24px;"></a>
+                </li>               
+                <li><a href="https://www.linkedin.com/in/musab-oguz/">
+                    <img src="img/linkedin.svg" alt="LinkedIn" style="height: 24px; width: 24px;"></a>
+                </li>
+                <li><a href="https://www.hackerrank.com/profile/doliatius">
+                    <img src="img/hackerrank.png" alt="Hackerrank" style="height: 24px; width: 24px;"></a>
+                </li> 
+                <li><a href="https://leetcode.com/u/dolyetyus/">
+                    <img src="img/leetcode.png" alt="Leetcode" style="height: 24px; width: 24px;"></a>
+                </li> 
+            </ul>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="redirects" class="redirects">
+                <li><a href="./index.html" id="homeButton">Home</a></li>
+                <li>
+                    <div id="aboutButtonWrapper">
+                        <a id="aboutButton">About</a>
+                        <ul id="aboutMeList" class="about-me-list">
+                            <li><a href="./about.html">About me</a></li>
+                            <li><a href="./skills.html">Skills</a></li>
+                            <li><a href="./certificates.html">Certificates</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="projectsButtonWrapper">
+                        <a id="projectsButton">Projects</a>
+                        <ul id="languageList" class="language-list">
+                            <li><a href="./projects/assembly.html">Assembly x64</a></li>
+                            <li><a href="./projects/c.html">C</a></li>
+                            <li><a href="./projects/cpp.html">C++</a></li>
+                            <li><a href="./projects/java.html">Java</a></li>
+                            <li><a href="./projects/kotlin.html">Kotlin</a></li>
+                            <li><a href="./projects/python.html">Python</a></li>
+                            <li><a href="./projects/scala.html">Scala</a></li>
+                            <li><a href="./projects/webdev.html">Web Dev</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro" id="aboutme">
+            <section>
+                <h2>About Me</h2>
+                <p>I'm a final year BSc Computer Science student at VU Amsterdam, with many years of experience in software development. I have experience with developing software within a team or alone.</p>
+                <p>I love continuously learning and improving skills through experimentation and learning. My interests are software engineering, artificial intelligence, cloud computing, and computer science in general. I am eager to apply skills in a professional work environment.</p>
+                <p>I currently live in Utrecht, The Netherlands. I speak English, Dutch, Turkish and Swedish, and currently learning German and Portuguese.</p>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>BSc Computer Science - Vrije University Amsterdam </br><span class="details">(2022 - 2025, Grade: 8.6/10)</span></li>
+                    <li>Minor Technology Based Entrepreneurship - Delft University of Technology </br><span class="details">(2024 - 2025)</span></li>
+                    <li>Pre-Bachelor (VJL) - University of Leiden </br><span class="details">(2021 - 2022, Grade: Pass)</span></li>
+                    <li>Highschool - Polatli Science Lyceum </br><span class="details">(2017 - 2021, Grade: 93/100)</span></li>
+                </ul>
+            </section>
+            <section class="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>I love reading technology blogs and news</li>
+                    <li>I love music</li>
+                    <li>I play the drums, bass, guitar</li>
+                    <li>I have been powerlifting and body building for years</li>
+                    <li>I love architecture, philosphy and history</li>
+                    <li>I love gaming, as well as making games</li>
+                    <li>I love scouting and hiking</li>
+                </ul>
+            </section>
+            <button class="get-in-touch" onclick="location.href='mailto:doliatius@proton.me';" style="display: none;">Get in touch</button>
+            <button class="cv-button" onclick="openCV();" style="display: none;">Check my CV</button>
+            <small id="lastUpdated" style="display: none;"></small>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 - Made by Musab Oguz</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
