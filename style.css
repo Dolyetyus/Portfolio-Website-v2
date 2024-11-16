@@ -411,6 +411,7 @@ footer p {
 @media (max-width: 768px) {
     .logo a, .logo a:hover {
         color: #242424;
+        pointer-events: none;
     }
 
     .hamburger {
