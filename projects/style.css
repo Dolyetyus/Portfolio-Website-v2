@@ -163,11 +163,6 @@ header nav ul li {
     margin: 0 20px;
 }
 
-header nav ul.social-media {
-    position: absolute;
-    left: 20px;
-}
-
 a {
     color: white;
     text-decoration: none;
@@ -417,21 +412,6 @@ footer {
         margin-bottom: 8px;
         border-bottom: 1px solid #fff; 
         padding: 5px;
-    }
-
-    .social-media.bottom {
-        position: absolute;
-        top: 26%;
-        left: 23%;
-        margin: auto;
-    }
-
-    ul.social-media {
-        margin: 15% 0px;
-    }
-
-    ul.social-media li {
-        margin-right: 5px;
     }
 
     .language-list {
