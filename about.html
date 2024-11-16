@@ -9,42 +9,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="social-media">
-                <li><a href="https://github.com/Dolyetyus">
-                    <img src="img/github.svg" alt="GitHub" style="height: 24px; width: 24px;"></a>
-                </li>               
-                <li><a href="https://www.linkedin.com/in/musab-oguz/">
-                    <img src="img/linkedin.svg" alt="LinkedIn" style="height: 24px; width: 24px;"></a>
-                </li>
-                <li><a href="https://www.hackerrank.com/profile/doliatius">
-                    <img src="img/hackerrank.png" alt="Hackerrank" style="height: 24px; width: 24px;"></a>
-                </li> 
-                <li><a href="https://leetcode.com/u/dolyetyus/">
-                    <img src="img/leetcode.png" alt="Leetcode" style="height: 24px; width: 24px;"></a>
-                </li> 
-            </ul>
-            <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <ul id="redirects" class="redirects">
-                <li><a href="./index.html" id="homeButton">Home</a></li>
-                <li>
-                    <div id="aboutButtonWrapper">
-                        <a id="aboutButton">About</a>
-                        <ul id="aboutMeList" class="about-me-list">
-                            <li><a href="./about.html">About me</a></li>
+        <div class="header-container">
+            <div class="logo">
+                <a href="./index.html">Musab Oguz</a>
+            </div>  
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html" id="homeButton">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" id="aboutButton">About</a>
+                        <ul class="dropdown-content">
+                            <li><a href="./about.html">About Me</a></li>
                             <li><a href="./skills.html">Skills</a></li>
                             <li><a href="./certificates.html">Certificates</a></li>
                         </ul>
-                    </div>
-                </li>
-                <li>
-                    <div id="projectsButtonWrapper">
-                        <a id="projectsButton">Projects</a>
-                        <ul id="languageList" class="language-list">
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" id="projectsButton">Projects</a>
+                        <ul class="dropdown-content">
                             <li><a href="./projects/assembly.html">Assembly x64</a></li>
                             <li><a href="./projects/c.html">C</a></li>
                             <li><a href="./projects/cpp.html">C++</a></li>
@@ -54,10 +36,15 @@
                             <li><a href="./projects/scala.html">Scala</a></li>
                             <li><a href="./projects/webdev.html">Web Dev</a></li>
                         </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </header>
     <main>
         <section class="intro" id="aboutme">
