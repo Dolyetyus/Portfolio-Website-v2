@@ -6,5 +6,8 @@ document.getElementById('lastUpdated').textContent = 'CV last updated: 12/11/202
 
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+    const hamburger = document.querySelector('.hamburger');
+    
+    navLinks.classList.toggle('show');
+    hamburger.classList.toggle('open');
 }
