@@ -68,6 +68,16 @@
     cursor: default;
 }
 
+#Php {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    text-align: center;
+    flex-direction: column;
+    cursor: default;
+}
+
 #repo {
     max-height: 380px;
     margin-bottom: 20px;
@@ -124,7 +134,7 @@
 body, html {
     margin: 0;
     padding-bottom: 80px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background: #000;
     color: #fff;
     min-height: 100%;
@@ -161,11 +171,23 @@ header nav ul {
 
 header nav ul li {
     margin: 0 20px;
+    position: relative;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    padding: 10px 10px; /* Add consistent padding */
+    display: inline-block; /* Ensures consistent height for buttons */
 }
 
 a {
     color: white;
     text-decoration: none;
+    text-align: center;
     font-size: 16px;
     transition: color 0.3s ease;
 }
@@ -174,7 +196,6 @@ a {
     text-align: center;
     padding: 150px 20px;
 }
-
 
 .about-me-list {
     display: none;
@@ -185,10 +206,10 @@ a {
     border: 1px solid #fff;
     list-style-type: none;
     margin-top: 7px;
-    right: 6%; 
     flex-direction: column;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 4px;
+    z-index: 1000;
 }
 
 .language-list {
@@ -200,7 +221,6 @@ a {
     border: 1px solid #fff;
     list-style-type: none;
     margin-top: 7px;
-    right: 2.7%; 
     flex-direction: column;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 4px;
@@ -211,21 +231,16 @@ a {
     display: block;
 }
 
-#aboutButton, #projectsButton{
+#homeButton, #aboutButton, #projectsButton{
     cursor: default;
+    width: 100px;
 }
 
 .language-list li,
 .about-me-list li {
     cursor: pointer;
-    padding: 5px 2px;
-}
-
-.language-list li,
-.about-me-list li {
-    cursor: pointer;
-    padding: 5px 2px;
     position: relative;
+    padding: 2px 1px;
 }
 
 .language-list li::after,
@@ -450,6 +465,11 @@ footer {
     .about-me-list li {
         padding: 0px 0px;
         border-bottom: 1px solid #fff;
+    }
+
+    .projects ul {
+        list-style-type: none;
+        text-align: left;
     }
 
     footer {

@@ -47,42 +47,45 @@
         </nav>
     </header>
     <main>
-        <section class="intro" id="CPP">
+        <section class="intro" id="Php">
             <div class="projects">
                 <div class="project0 fade-in">
-                    <h2>Random Maze Generator and Solver</h2>
-                    <p>Created a maze generator and pathfinder in C++, using object-oriented design principles and algorithmic prowess...</p>
-                    <img src="../img/cpp1.png" id="repo" alt="Project Image"> </br>
-                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
-                </div>
-                <div class="project1 fade-in">
-                    <h2>Binary Search Tree & Print</h2>
-                    <p>Implemented and enhanced a simple Binary Search Tree implementation in C++...</p>
-                    <img src="../img/cpp2.png" id="repo" alt="Project Image"> </br>
-                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
-                </div>
-                <div class="project2 fade-in">
-                    <h2>Hackerrank 3 Months Preparation Solutions</h2>
-                    <p>Solved 105 diverse challenges from Hackerrank's 3-month interview preparation kit...</p>
-                    <a href="https://github.com/Dolyetyus/My-Hackerrank-3-Months-Preparation-Solutions" id="reach">GitHub Link</a>
-                </div>
-                <div class="project3 fade-in">
-                    <h2>Knight's Tour Path Finder</h2>
-                    <p>Implemented a Knight's Tour Algorithm in C++ capable of finding a tour...</p>
-                    <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
-                </div>
-                <div class="project4 fade-in">
-                    <h2>Letter Stats</h2>
-                    <p>Wrote a letter stats program in C++ that efficiently counts the occurrences of the letters in an input text...</p>
+                    <h2>Chat Application Backend</h2>
+                    <p>This project is a backend service for a chat application, as requested by Bunq, providing RESTful APIs for user management, group, and messaging functionalities.</p>
+                    <p>The backend is built using PHP with the Slim framework, along with SQLite for data storage. Below is a brief overview of the project:</p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>User registration and deletion</li>
+                        <li>Group creation, joining, and deletion</li>
+                        <li>Messaging within groups</li>
+                        <li>Retrieve group members and messages</li>
+                        <li>Edge case handling</li>
+                    </ul>
+
+                    <h3>API Endpoints</h3>
+                    <p>The available API endpoints are as follows:</p>
+                    <ul>
+                        <li>User Registration: (POST /users/register)</li>
+                        <li>User Deletion: (DELETE /users/{user_id})</li>
+                        <li>Group Creation: (POST /groups/create)</li>
+                        <li>Group Join: (POST /groups/join)</li>
+                        <li>Group Deletion: (DELETE /groups/{group_id})</li>
+                        <li>Get Group Members: (GET /groups/{group_id}/members)</li>
+                        <li>Group Leave: (POST /groups/leave)</li>
+                        <li>Send Message: (POST /groups/{group_id}/messages/send)</li>
+                        <li>Get Group Messages: (GET /groups/{group_id}/messages)</li>
+                    </ul>
+
+                    <p>For a full list of API requests, please refer to the official documentation on the repository (private on Bunq's request).</p>
                     <p>- <a href="mailto:doliatius@proton.me" id="reach">Reach me</a> for the source code and more details.</p>
                 </div>
             </div>
-    
             <button class="get-in-touch" onclick="location.href='mailto:doliatius@proton.me';" style="display: none;">Get in touch</button>
             <button class="cv-button" onclick="openCV();" style="display: none;">Check my CV</button>
             <small id="lastUpdated" style="display: none;"></small>
         </section>
-    </main>    
+    </main>
+
     <footer>
         <p>Copyright © 2024 - Made by Musab Oguz</p>
     </footer>
