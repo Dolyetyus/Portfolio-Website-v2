@@ -2,7 +2,7 @@ function openCV() {
     window.open('files/resume.pdf', '_blank');
 }
 
-document.getElementById('lastUpdated').textContent = 'CV last updated: 12/11/2024';
+document.getElementById('lastUpdated').textContent = 'CV last updated: 17/01/2025';
 
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
